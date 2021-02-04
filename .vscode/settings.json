@@ -1,0 +1,6 @@
+{
+    "eslint.packageManager": "yarn",
+    "eslint.quiet": true,
+    "eslint.workingDirectories": [
+    ]
+}
