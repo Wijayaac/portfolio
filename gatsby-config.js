@@ -17,6 +17,34 @@ module.exports = {
         singleTypes: [`home`],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["400", "700"],
+              fontDisplay: "swap",
+            },
+            {
+              family: "Open Sans",
+              fontDisplay: "swap",
+            },
+          ],
+        },
+        useMinify: true,
+        usePreload: true,
+        usePreconnect: false,
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
