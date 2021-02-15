@@ -6,6 +6,15 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetaData: {
+    title: "Wijayaac Portfolio",
+    description:
+      "Showcasing latest works on a personal, and commercial project. Creating blazingly fast web apps, and using modern technology. Making your web apps operations as cheap as possible, but also keep it stable in every case. ",
+    author: "@wijayaac",
+    twitterUsername: "@wijayaac",
+    image: "/twitter-img.png",
+    siteUrl: "https://wijayaac.netlify.app",
+  },
   plugins: [
     {
       resolve: `gatsby-source-strapi`,
@@ -47,5 +56,6 @@ module.exports = {
     },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
